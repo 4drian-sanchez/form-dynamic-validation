@@ -1,0 +1,154 @@
+
+
+/* RESET */
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /* 1REM = 10px */
+    scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    /* font-family: var(--primaryFont); */
+    font-size: 1.6rem;
+    line-height: 2;
+    background-color:rgb(243 244 246);
+}
+
+/* GLOBALS */
+.contenedor {
+    width: min(120rem, 90%);
+    margin: 0 auto;
+}
+
+.contenedor-single {
+    width: min(90rem, 90%);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+    /* font-family: var(--headingFont); */
+    margin: 1rem 0 4rem 0;
+    color: var(--primary);
+}
+
+h1 {
+    font-size: 4.4rem;
+}
+
+h2 {
+    font-size: 3.6rem;
+}
+
+h3 {
+    font-size: 2.8rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+    height: auto;
+}
+
+p {
+    margin: 0;
+}
+
+fieldset {
+  all: unset;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+label {
+    display: block;
+}
+
+textarea {
+    resize: none;
+}
+
+/* Utilidades */
+.text-center {
+    text-align: center;
+}
+
+/* Componentes */
+.error {
+    border: 1px solid red;
+    padding: 1rem;
+    border-radius: .5rem;
+    color: red;
+}
+
+.error-group {
+    color: red;
+    margin-top: .3rem;
+    font-size: 1.4rem;
+}
+
+
+/* FORMULARIO */
+
+.form-spacing {
+    margin-bottom: 1rem;
+}
+
+.campo {
+    width: 100%;
+    border: 1px solid #9C9C9C;
+    padding: 2rem;
+    border-radius: 1rem;
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #777;
+    border: none;
+    padding: .5rem 2rem;
+    color: white;
+    border-radius: .5rem;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+textarea[id="mensaje"] {
+    width: 100%;
+    border: 1px solid #9C9C9C;
+    padding: 2rem;
+    border-radius: 1rem;
+    outline: none;
+}
+
+
+
+/* Solo para el ejemplo */
+.ejemplo {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.error-input,
+textarea[id="mensaje"].error-input {
+    border: 1px solid red;
+}
+
+ 
