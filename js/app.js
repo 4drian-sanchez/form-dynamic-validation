@@ -82,7 +82,7 @@ const validarFormulario = e => {
     if (
         nombre.value.length <= 0 ||
         correo.value.length <= 0 ||
-        !emailTest.test(correo) <= 0 ||
+        !emailTest.test(correo.value) ||
         telefono.value.length <= 0 ||
         mensaje.value.length <= 0) {
         return
